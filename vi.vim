@@ -1,4 +1,3 @@
-:set mouse=a
 let g:javascript_plugin_jsdoc = 1
 
 call plug#begin()
@@ -12,11 +11,17 @@ call plug#begin()
 Plug 'girishji/vimcomplete'
 call plug#end()
 
+call plug#begin()
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
 filetype off
 filetype plugin indent on
 set smartindent
 
+set wildmenu
 set tabstop=4
+set mouse=a
 set shiftwidth=4
 set noexpandtab
 
