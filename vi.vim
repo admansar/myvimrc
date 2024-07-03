@@ -1,19 +1,13 @@
 let g:javascript_plugin_jsdoc = 1
 
 call plug#begin()
-
-" List your plugins here
 Plug 'tpope/vim-sensible'
-
-call plug#end()
-
-call plug#begin()
-Plug 'girishji/vimcomplete'
-call plug#end()
-
-call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'davidhalter/jedi-vim'
 call plug#end()
+
+let g:coc_disable_startup_warning = 1
+set mouse=a
 
 filetype off
 filetype plugin indent on
