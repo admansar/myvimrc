@@ -41,3 +41,4 @@ set hlsearch
 
 au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
+hi CocFloating ctermbg=DarkMagenta | hi CocMenuSel ctermbg=Black | hi CocSearch ctermfg=Yellow
